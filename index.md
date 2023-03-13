@@ -5,7 +5,7 @@
 ### Software Apps
 
 [Statistical Rail Fleet Sizing Simulation](/sample_page)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+<img src="images/Fleet_Size_Sim_Photo.jpg?raw=true"/>
 
 ---
 [Form/Questionaire Builder](/pdf/sample_presentation.pdf)
