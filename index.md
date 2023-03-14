@@ -1,8 +1,8 @@
-## Portfolio
+# Portfolio
 
 ---
 
-### Software Apps
+## Software Apps
 
 [Statistical Rail Fleet Sizing Simulation](/rail_fleet_sizing)
 <img src="images/Fleet_Size_Sim_Photo.jpg?raw=true"/>
@@ -13,7 +13,7 @@
 
 ---
 
-### Machine Learning Models
+## Machine Learning Models
 
 [Shipment Type Classifier](/sample_page)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
@@ -23,7 +23,7 @@
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
-### Business Intelligence / Advanced Analytics Dashboards
+## Business Intelligence / Advanced Analytics Dashboards
 
 [Inflation Tracking](/sample_page)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
