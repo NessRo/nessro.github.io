@@ -1,16 +1,20 @@
-## This can be your internal website page / project page
+## Rail Car Fleet Sizing Simulation Application
 
-**Project description:** Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+**Project description:** 
 
-### 1. Suggest hypotheses about the causes of observed phenomena
+purpose of the app is to simulate rail transportation cycle times in order to determine the optimal rail car fleet size given a weekly demand parameter.
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+the technical stack includes:
 
-```javascript
-if (isAwesome){
-  return true
-}
-```
+Azure Web App Services
+Azure Blob Storage
+Python
+Linux OS
+FastAPI web framework
+
+### 1. The Business Problem
+
+as an enteprise that uses rail cars as part of its supply chain to ship product to customers, you must determine and lease rail cars to satisfy a fixed weekly demand. there is inherit variability in the transit times from the origin and destination of a rail cars journey.
 
 ### 2. Assess assumptions on which statistical inference will be based
 
