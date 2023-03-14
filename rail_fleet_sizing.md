@@ -108,3 +108,7 @@ there are two main end points for the app.
 in production, the application is able to cut costs by right sizing the railcar fleet by having just the right amount of railcars. historically, an organization has kept extra rail cars for a rainy day or to cover any unexpected variablity. by cutting those rail car expenses, you are able to save approximately $500 a month per rail car (excluding maintenance)
 
 the application also improves the customer exprience by making sure they have consistent supply that is not prone to variability in transit cycle times. in many cases, consistent supply to customers is critical to thier operations and is more important than product cost.
+
+# 5. Project Github
+
+https://github.com/NessRo/Fleet-Sizing-Simulation-App
