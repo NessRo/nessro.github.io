@@ -6,11 +6,15 @@ purpose of the app is to simulate rail transportation cycle times in order to de
 
 the technical stack includes:
 
-Azure Web App Services
-Azure Blob Storage
-Python
-Linux OS
-FastAPI web framework
+* Azure Web App Services
+
+* Azure Blob Storage
+
+* Python
+
+* Linux OS
+
+* FastAPI web framework
 
 ### 1. The Business Problem
 
