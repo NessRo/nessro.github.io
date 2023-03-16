@@ -111,4 +111,4 @@ the application also improves the customer exprience by making sure they have co
 
 # 5. Project Github
 
-https://github.com/NessRo/Fleet-Sizing-Simulation-App
+<a href="https://github.com/NessRo/Fleet-Sizing-Simulation-App">GitHub Repo</a>
