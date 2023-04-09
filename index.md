@@ -9,7 +9,7 @@
 
 ---
 [Form/Questionaire Builder](/Questionaire_Builder)
-<img src="Questionaire Maker Gif.gif?raw=true"/>
+<img src="images/Questionaire Maker Gif.gif?raw=true"/>
 
 ---
 
