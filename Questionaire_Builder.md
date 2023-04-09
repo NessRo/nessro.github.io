@@ -2,25 +2,17 @@
 
 **Project description:** 
 
-purpose of the app is to simulate rail transportation cycle times in order to determine the optimal rail car fleet size given a weekly demand parameter.
+This project is a web-based application that enables users to build custom questionnaires/forms quickly and easily. The app is designed to be intuitive and user-friendly, and it features a robust set of tools for creating, editing, and sharing forms.
 
-the technical stack includes:
+The application is built using a tech stack that includes JavaScript React, React-Redux, and FastAPI Python web framework. The frontend is built with React and Redux, which provide a powerful and efficient user interface. The backend is powered by FastAPI, which is a modern, fast, and lightweight Python web framework that makes it easy to build APIs.
 
-* Azure Web App Services
-
-* Azure Blob Storage
-
-* Python
-
-* Linux OS
-
-* FastAPI web framework
-
+The app allows users to create questionnaires/forms from scratch or choose from a library of pre-built templates. Users can add a variety of question types, including multiple-choice, short answer, and long answer questions. The app also provides a range of customization options, such as adding images and logos, changing fonts and colors, and more.
+                         
 # 1. The Business Problem
 
-As an enterprise that uses railcars as part of its supply chain to ship products to customers, you must determine and lease railcars to satisfy a fixed weekly demand. in order to service the customer demand, you must account for the inherent variability in the transit times from the origin to the destination of a railcar's journey.
+The business problem that the software app is trying to solve is the challenge of creating and distributing custom questionnaires/forms quickly and efficiently. Traditional methods of creating questionnaires/forms, such as using spreadsheets or paper-based forms, can be time-consuming and error-prone. Additionally, distributing and tracking responses to these forms can be a logistical nightmare, especially for large organizations or teams.
 
-The question to answer becomes: how many rail cars must i lease into a fleet to service a given customer's weekly demand?
+By solving this business problem, the app can help businesses and organizations improve their operational efficiency, gather valuable data and insights, and ultimately make better decisions. Whether it's for market research, employee feedback, customer satisfaction surveys, or any other use case, our app offers a powerful and flexible solution for creating and distributing custom questionnaires/forms.
 
 # 2. The Solution
 
@@ -32,83 +24,16 @@ Managers are then expected to make a decision on fleet size based on the desired
 
 # 3. How it works
 
-the app is given several paramters sent over as a JSON payload.
+Our software app for building questionnaires/forms works by providing a simple and intuitive user interface for creating, customizing, and sharing forms. The process is broken down into several easy steps:
 
-these parameters are:
-1. Weekly Demand structured as a dictionary where keys are days of the week and value is the expected demand (in rail cars)
-2. cycle time statistics for the particular scenario. statistics include
-    * Mean, Max, Min and Standard deviation for transit times going to destination.
-    * Mean, Max, Min and Standard deviation for wait times at the destination. (wait times can include processing and unloading time)
-    * Mean, Max, Min and Standard deviation for transit times back to origin.
-    * Mean, Max, Min and Standard deviation for wait times at the Origin. (wait times can include processing and loading time)
-    
-the app intializes an initial rail fleet size based on the following formula:
+1.	Choose a template or start from scratch: Users can choose from a library of pre-built templates or create a new form from scratch.
+2.	Add questions: Users can add a variety of question types, such as multiple-choice, short answer, and long answer questions. They can also customize each question with images, videos, and other multimedia elements.
+3.	Customize the design: Users can customize the design of their form by changing the fonts, colors, and other visual elements.
+4.	Share the form: Once the form is complete, users can share it with others via a unique URL or embed code.
+5.	Track responses: The app provides powerful analytics tools that enable users to track responses, view response rates, and generate reports.
 
-$(\frac{(DTm+DWm+OTm+OWm)+((DTstdev+DWstdev+OTstdev+OWstdev)\times2)}{7}) \times \sum(WD)$
-
-$DTm =$ mean of the destination transit times.
-
-$DWm =$ mean of the destination wait times.
-
-$OTm =$ mean of the origin transit times.
-
-$OWm =$ mean of the origin wait times.
-
-$DTstdev =$ Standard deviation of the destination transit times.
-
-$DWstdev =$ Standard deviation of the destination wait times.
-
-$OTstdev =$ Standard deviation of the origin transit times.
-
-$OWstdev =$ Standard deviation of the origin wait times.
-
-$WD =$ Weekly Demand.
-
-
-
-Given the parameters above, the app simulates a random point in a trunctated normal distribution given the summary statistics of the cycle time.
-
-the app creates 10 seperate simulations each with 365 days simulated. each simulation uses +-2% of the initial fleetsize set at the begining of the process.
-
-the app further plots all 10 simulations on a graph showing:
-
-    * Exected Yearly Demand = the demand that is expected if all deliveries are made according to the weekly demand expanded for 365 days a year.
-    
-    * actual demand = the demand that was simulated given the randomly selected distribution for 365 days a year.
-    
-    * service level = the actual demand divided by the expected yearly demand. service expressed as a peprcentage.
-    
-![alt text](https://github.com/NessRo/Fleet-Sizing-Simulation-App/blob/master/plot.png?raw=true)
-
-the app saves the plot and a table describing the results to an excel file which gets stored in a blob storage.
-
-### API Structure
-
-there are two main end points for the app.
-
-1. start_sim post end point:
-
-    * end point takes a JSON payload that includes the weekly demand and the sumary statistics necessary for the simulation.
-    
-    * the end point starts the simulation as a background process and returns a reponse containing a unique ID for the process/simulation.
-    
-    * it is critical that the response be stored so the results can be retrieved.
-    
-2. get_file get end point:
-
-    * end point takes the ID from the start_sim response to go and retrieve the file from the blob storge.
-    
-    * if file does not exist/simulation has not completed it will return a file not found error.
-    
-    * response is a file response: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet / an excel document.
-
-
-# 4. Project Impact
-
-in production, the application is able to cut costs by right sizing the railcar fleet by having just the right amount of railcars. historically, an organization has kept extra rail cars for a rainy day or to cover any unexpected variablity. by cutting those rail car expenses, you are able to save approximately $500 a month per rail car (excluding maintenance)
-
-the application also improves the customer exprience by making sure they have consistent supply that is not prone to variability in transit cycle times. in many cases, consistent supply to customers is critical to thier operations and is more important than product cost.
+Our software app is built using JavaScript React, React-Redux, and FastAPI Python web framework, which provide a fast and efficient user interface and a powerful backend. Overall, our app provides a simple and efficient solution for creating and sharing custom questionnaires/forms.
 
 # 5. Project Github
 
-<a href="https://github.com/NessRo/Fleet-Sizing-Simulation-App">GitHub Repo</a>
+<a href="https://github.com/NessRo/Warden_FrontEnd">GitHub Repo</a>
