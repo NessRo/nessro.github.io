@@ -16,7 +16,7 @@
 ## Machine Learning Models
 
 [Shipment Type Classifier](/sample_page)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+<img src="images/Decision tree classification tree.png?raw=true"/>
 
 ---
 [Material Forecasting](/pdf/sample_presentation.pdf)
