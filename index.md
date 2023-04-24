@@ -25,7 +25,7 @@
 ---
 ## Business Intelligence / Advanced Analytics Dashboards
 
-[Inventory Tracking Report](/sample_page)
+[Inventory Tracking Report](/pdf/Global Inventory Report.pdf)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
