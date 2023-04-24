@@ -25,7 +25,7 @@
 ---
 ## Business Intelligence / Advanced Analytics Dashboards
 
-[Inflation Tracking](/sample_page)
+[Inventory Tracking Report](/sample_page)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
