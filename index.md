@@ -15,7 +15,7 @@
 
 ## Machine Learning Models
 
-[Shipment Type Classifier](https://github.com/NessRo/nessro.github.io/blob/master/pdf/Classifying_Shipment_Modes.ipynb)
+[Shipment Type Classifier](https://nbviewer.org/github/NessRo/nessro.github.io/blob/master/pdf/Classifying_Shipment_Modes.ipynb)
 <img src="images/Decision tree classification tree.png?raw=true"/>
 
 ---
