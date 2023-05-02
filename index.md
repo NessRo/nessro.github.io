@@ -15,7 +15,7 @@
 
 ## Machine Learning Models
 
-[Shipment Type Classifier](/sample_page)
+[Shipment Type Classifier](/pdf/Classifying_Shipment_Modes.ipynb)
 <img src="images/Decision tree classification tree.png?raw=true"/>
 
 ---
